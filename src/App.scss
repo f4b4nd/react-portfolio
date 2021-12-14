@@ -1,0 +1,113 @@
+.App {
+  text-align: center;
+  padding: 1em;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.hero, .skills, .contact {
+  .image {
+    width: 400px;
+    height: 400px;
+    max-width: 90vw;
+    background-color: lightgrey;
+    margin: 0 auto;
+  }
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and (max-width: 500px) {
+    display: block;
+  }
+
+}
+
+.hero, .skills, .contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  @media screen and (max-width: 800px) {
+    display: block;
+  }
+}
+
+.skills {
+  flex-direction: row-reverse;
+}
+
+.projects {
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+    justify-content: center;
+
+    gap:  0;
+  }
+
+  .card {
+    border: 1px solid grey;
+    max-width: 300px;
+    border-radius: 10px;
+    margin: auto;
+
+    img {
+      min-height: 200px;
+    }
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+
+  .fab {
+    color: white;
+    font-size:2rem;
+    height: 2.6rem;
+    width: 2.6rem;
+    border-radius: 2.6rem;
+    line-height: 2.6rem;
+    padding: 0.2em;
+    position: relative;
+    text-align: center;
+    margin: 10px;
+  }
+
+  .fa-github {
+    background-color: black;
+  }
+
+  .fa-linkedin-in {
+    background-color: #0e76a8;
+  }
+
+  .fa-google {
+    background-color: #ea4335;
+  }
+}

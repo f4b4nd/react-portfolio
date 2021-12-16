@@ -14,18 +14,7 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .hero, .skills, .contact {
   .image {
@@ -40,9 +29,30 @@
 .navigation {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 1em; 
 
-  @media screen and (max-width: 500px) {
+  .navicon {
     display: block;
+    border: 1px solid black;
+    height: 50px;
+  }
+
+  @media screen and (max-width: 600px) {
+    display: block;
+
+    .col:first-of-type {
+      align-self: flex-start;
+    }
+
+    .menu {
+      display: flex;
+      flex-direction: column;
+
+      &:not(.menu-active) {
+        display: none;
+      }
+    }
+    
   }
 
 }

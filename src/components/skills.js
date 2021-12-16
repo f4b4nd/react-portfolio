@@ -34,7 +34,7 @@ export default function Skills () {
 
                     <li> 
                         ⚡️
-                        I enjoy really much working on <b>Linux</b> environments ! 
+                        I enjoy really much working on <b>Linux</b> environments ! 🚀 
                         <b> Docker</b> is a great tool for sandbox.
                     </li>
 

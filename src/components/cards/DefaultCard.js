@@ -53,6 +53,11 @@ const StyledDefaultCard = styled.div`
     
     &:hover {
         box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.2);
+
+        img {
+            transform: scale(1.1);
+            transition: transform 0.5s ease-in-out;
+        }
     }
 
     .card-image {
@@ -61,6 +66,7 @@ const StyledDefaultCard = styled.div`
         display: flex;
         justify-content: center;
         justify-self: flex-start;
+        overflow: hidden;
 
         img {
             height: 100%;

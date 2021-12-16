@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { ButtonHamburger } from "./button-hamburger"
+import { ButtonHamburger } from "./buttons/ButtonHamburger"
 
 
 export default function Navigation () {
@@ -22,7 +22,6 @@ export default function Navigation () {
             <ButtonHamburger 
                 menuIsActive={menuIsActive}
                 setMenuIsActive={setMenuIsActive}
-                minWidth={'601px'}
             />
            
         </div>

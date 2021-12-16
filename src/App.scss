@@ -29,24 +29,32 @@
 .navigation {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 1em; 
+  margin-bottom: 3em; 
 
-  .navicon {
-    display: block;
-    border: 1px solid black;
-    height: 50px;
+  .btn-hamburger {
+    position: absolute; 
+    top: 10px; 
+    right: 5%;
+
+    @media screen and (min-width: 601px) {
+      display: none;
+    }
   }
+
 
   @media screen and (max-width: 600px) {
     display: block;
 
     .col:first-of-type {
-      align-self: flex-start;
+      position: absolute;
+      top: 5%;
+      left: 5%;
     }
 
     .menu {
       display: flex;
       flex-direction: column;
+      margin-top: 3em;
 
       &:not(.menu-active) {
         display: none;
@@ -92,32 +100,8 @@
   }
 }
 
+
 .social {
   display: flex;
   justify-content: space-around;
-
-  .fab {
-    color: white;
-    font-size:2rem;
-    height: 2.6rem;
-    width: 2.6rem;
-    border-radius: 2.6rem;
-    line-height: 2.6rem;
-    padding: 0.2em;
-    position: relative;
-    text-align: center;
-    margin: 10px;
-  }
-
-  .fa-github {
-    background-color: black;
-  }
-
-  .fa-linkedin-in {
-    background-color: #0e76a8;
-  }
-
-  .fa-google {
-    background-color: #ea4335;
-  }
 }

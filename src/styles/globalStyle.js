@@ -1,8 +1,8 @@
 import { createGlobalStyle } from 'styled-components'
-
+import { getThemeColor } from './themes'
 
 export const GlobalStyle = createGlobalStyle`
     body {
-        background-color: ${({isDarkMode}) => isDarkMode ? 'black' : 'white'};
+        background-color: ${getThemeColor('white', props => props.isDarkMode)};
     }
 `

@@ -10,7 +10,6 @@ export const SwitchButton = ({children, widthPx='50', heightPx='25', setSwitcher
             height={heightPx}
             onClick={() => setSwitcher()}
         >
-
             <div className="btn-background"></div>
             <div className="btn-circle"></div>
         </StyledSwitchButton>

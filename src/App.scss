@@ -29,7 +29,6 @@
     }
   }
 
-
   @media screen and (max-width: 600px) {
     display: block;
 
@@ -68,12 +67,13 @@
 }
 
 .projects {
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
-    justify-content: center;
 
-    gap:  0;
+  .projects-cards {
+    box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+    justify-content: center;
+    gap: 1em 0;
   }
 
   .card {

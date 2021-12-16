@@ -10,7 +10,9 @@ export default function Navigation () {
     return (
         <div className="navigation">
             <div className="col">
-                <div> Fabien A. </div>
+                <div className="logo-container"> 
+                    <img src="/images/fabien-andria-logo.png" alt="fabien andria" />
+                </div>
             </div>
             <div className="col">
                 <div className={'menu' + (menuIsActive ? " menu-active" : "")}>

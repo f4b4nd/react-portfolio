@@ -11,9 +11,6 @@ export default function Contact () {
                 <h4> fabien.andria@pm.me </h4>
                 <Social />
             </div>
-            <div className="col"> 
-                <div className="image"></div>
-            </div>
         </div>
     )
 }

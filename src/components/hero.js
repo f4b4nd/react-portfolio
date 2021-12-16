@@ -7,7 +7,7 @@ export default function Hero () {
                 <h1> Hi all, I'm Fabien </h1>
                 <p>
                 I'm a web developer FullStack Javascript 🚀 <br/>
-                I'm also pasionate by all the web technologies, I'm curious, and motivated to learn and step up. <br/>
+                I'm also passionate by all the web technologies, I'm curious, and motivated to learn and step up. <br/>
                 During my free time, I practice sport, spend time with my friends, or going in the nature.
                 </p>
                 <Social />

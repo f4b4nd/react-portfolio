@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { HamburgerButton } from "./buttons/HamburgerButton"
 import { NavigationButton } from "./buttons/NavigationButton"
+import { SwitchButton } from "./buttons/SwitchButton"
 
 export default function Navigation () {
 
@@ -17,6 +18,7 @@ export default function Navigation () {
                     <NavigationButton href="#projects">Projects</NavigationButton>
                     <NavigationButton href="#contact">Contact me</NavigationButton>
                     <button> Dark </button>
+                    <SwitchButton widthPx='50' heightPx='25'/>
                 </div>
             </div>
             <HamburgerButton 

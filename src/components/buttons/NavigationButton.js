@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const NavigationButton = ({children, ...restProps}) => (
-    <StyledNavigationButton>
+    <StyledNavigationButton className="btn-navigation">
         <a {...restProps}>
         {children}
         </a>

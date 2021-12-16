@@ -1,4 +1,8 @@
+import { ProjectCard } from "./cards/ProjectCard"
+
+
 export default function Projects () {
+
     const projects = [
         {
             title: 'Netflix', 
@@ -32,7 +36,7 @@ export default function Projects () {
         },
     ]
 
-    const projectsCards = projects.map((item, idx) => (
+    const ProjectsCards = projects.map((item, idx) => (
         <ProjectCard 
             key={idx} 
             title={item.title}
@@ -46,25 +50,9 @@ export default function Projects () {
             <h1> Projects </h1>
             <h2> Achievements, Some Cool Stuff that I have worked on !</h2>
             <div className="grid"> 
-                {projectsCards} 
+                {ProjectsCards} 
             </div>
         </div>
     )
 }
 
-function ProjectCard ({title, description, image}) {
-    return (
-        <div className="card">
-            <div className="img-container"> 
-                <img src={image} />
-            </div>
-            <div className="title">
-                {title}
-            </div>
-            <div className="description">
-                {description}
-            </div>
-            <div className="see-more"> <button> See more </button> </div>
-        </div>
-    )
-}

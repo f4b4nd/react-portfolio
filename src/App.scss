@@ -7,7 +7,7 @@
   margin-bottom: 3em; 
 }
 
-.skills, .contact {
+.contact {
   .image {
     width: 400px;
     height: 400px;
@@ -62,7 +62,7 @@
 
 }
 
-.hero, .skills, .contact {
+.hero, .contact {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -72,30 +72,6 @@
   }
 }
 
-.skills {
-  flex-direction: row-reverse;
-}
-
-.projects {
-
-  .projects-cards {
-    box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.2);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
-    justify-content: center;
-    gap: 1em 0;
-  }
-
-  .card {
-    margin: auto;
-  }
-}
-
-
-.social {
-  display: flex;
-  justify-content: space-around;
-}
 
 .hero {
 
@@ -122,4 +98,46 @@
     }
   }
 
+}
+
+.skills {
+  padding: 1em;
+
+  .text-container {
+    text-align: left;
+    max-width: 800px;
+    font-size: 25px;
+    margin: 0 auto;
+    color: #868e96;
+    font-weight: 250;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+  li:not(:last-of-type) {
+    margin-bottom: 1em;
+  }
+
+}
+
+.projects {
+
+  .projects-cards {
+    box-shadow: 0 10px 30px -15px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 350px));
+    justify-content: center;
+    gap: 1em 0;
+  }
+
+  .card {
+    margin: auto;
+  }
+}
+
+
+.social {
+  display: flex;
+  justify-content: space-around;
 }

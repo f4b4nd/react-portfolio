@@ -1,25 +1,45 @@
 export default function Skills () {
     return (
         <div className="skills" id="skills">
-            <div className="col">
-                <h1> What I do </h1>
-                <h2> CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK </h2>
-                <ul>
-                    <li>
-                        Develop highly interactive Front end / User Interfaces for your web and mobile applications. 
-                        I use React-Redux, API context or React Hooks. 
-                        To design I use Tailwind, Style-components, Saas.
+            <h1> What I do . . . </h1>
+            <div className="text-container">
+
+                <ul>            
+                
+                    <li> 
+                        ⚡️ 
+                        I develop highly interactive Front end / User Interfaces for your web applications.
+                        I use primarily <b>React</b> and <b>Redux</b>, and have a lot of fun using <b>hooks</b>.
                     </li>
-                    <li>
-                        I'm able to use NodeJs, and Express and I've Knowledge of Back End, Database using PostgreSQL
+
+                    <li> 
+                        ⚡️ 
+                        To design, I usually go for <b>styled-components</b> or <b>Sass/Less</b>, and I use <b>Figma</b> for quick prototyping.
                     </li>
-                    <li>
-                    I'm use to use Firebase, Npm-Yarn, git for the versionning and have some knowledge of Typescript and Nextjs
+
+                    <li> 
+                        ⚡️
+                        I have a good knowledge of back-end (Python Django) and Database (Firebase, PostgreSQL, Oracle)
                     </li>
+
+                    <li> 
+                        ⚡️
+                        I can use <b>WordPress</b>, especially when it's about simple projects that don't necessarily need lots of interactions.
+                    </li>
+
+                    <li> 
+                        ⚡️
+                        I use <b>Git</b> for version control
+                    </li>
+
+                    <li> 
+                        ⚡️
+                        I enjoy really much working on <b>Linux</b> environments ! 
+                        <b> Docker</b> is a great tool for sandbox.
+                    </li>
+
                 </ul>
-            </div>
-            <div className="col"> 
-                <div className="image"></div>
+
             </div>
         </div>
     )

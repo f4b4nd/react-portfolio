@@ -1,4 +1,4 @@
-import { DefaultCard as Card} from "./cards/DefaultCard"
+import { DefaultCard as Card } from "./cards/DefaultCard"
 
 
 export default function Projects () {
@@ -6,14 +6,14 @@ export default function Projects () {
     const projects = [
         {
             title: 'Netflix', 
-            description : 'Build a Netflix Clone, with React, Redux, Stripe, SCSS, firebase.',
+            description : 'A Netflix Clone, with React, hooks and Firebase',
             image : '/images/react-netflix.png',
             projectUrl: 'https://react-netflix-clone-f4b4nd.netlify.app/'
         },
         {
-            title: 'Airbnb', 
-            description : 'Build a Airbnb Clone, with React, Redux, Stripe, SCSS, firebase.',
-            image : 'link',
+            title: 'Calculator', 
+            description : 'Simple Calculator with React, hooks',
+            image : '/images/react-calculator.png',
             projectUrl: ''
         },
         {

@@ -37,6 +37,7 @@ DefaultCard.Button = ({children, ...restProps}) => (
 
 const StyledDefaultCard = styled.div`
 
+    height: 380px;
     max-width: 300px;
     display: flex;
     flex-direction: column;
@@ -80,6 +81,7 @@ const StyledDefaultCard = styled.div`
         color: #666;
         font-size: 17px;
         line-height: 1.5rem;
+        min-height: 48px;
     }
 
     .card-button {

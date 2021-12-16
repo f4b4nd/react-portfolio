@@ -3,12 +3,13 @@ import styled from 'styled-components'
 export const NavigationButton = ({children, ...restProps}) => (
     <StyledNavigationButton className="btn-navigation">
         <a {...restProps}>
-        {children}
+            {children}
         </a>
     </StyledNavigationButton>
 )
 
 const StyledNavigationButton = styled.span`
+
     font-size: 25px;
     font-weight: 100;
     padding: 0.5em;

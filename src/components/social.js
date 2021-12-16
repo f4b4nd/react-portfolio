@@ -15,8 +15,6 @@ export default function Social () {
 
 const StyledSocial = styled.div`
 
-
-
     .fab {
         color: white;
         font-size:2rem;
@@ -28,6 +26,13 @@ const StyledSocial = styled.div`
         position: relative;
         text-align: center;
         margin: 10px;
+
+        &:hover {
+            background-color: black;
+            transition: background-color 0.5s ease;
+            transition: opacity 0.5s ease;
+            opacity: 0.7;
+        }
     }
 
     .fa-github {

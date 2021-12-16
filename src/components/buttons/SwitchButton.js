@@ -41,18 +41,16 @@ const StyledSwitchButton = styled.div`
 
     .circle {
         width: 50%;
-        transform: translateY(${({height}) => (parseFloat(height) * (-1)) -1}px);
         background-color: white;
         box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.2);
         border: 0.1px solid lightgray;
         z-index: 3;
-
     }
 
     &:not(.btn-switch-active) {
 
         & > .circle {
-            transform: translateX(${({width}) => parseFloat(width) / 2 }px) translateY(${({height}) => -1 + (parseFloat(height) * -1)}px);
+            transform: translateX(${({width}) => parseFloat(width) / 2 }px) translateY(${({height}) => -parseFloat(height) - 1}px);
             transition: transform 0.4s ease-in-out;
         }
 
@@ -66,7 +64,7 @@ const StyledSwitchButton = styled.div`
     &.btn-switch-active {
 
         & > .circle {
-            transform: translateY(${({height}) => -1 + (parseFloat(height) * -1)}px);
+            transform: translateY(${({height}) => -parseFloat(height) - 1}px);
             transition: transform 0.4s;
         }
 

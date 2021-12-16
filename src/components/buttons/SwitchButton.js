@@ -13,10 +13,11 @@ export const SwitchButton = ({children, widthPx='50', heightPx='25', ...restProp
             className={"btn-switch" + (isActive ? ' btn-switch-active': '')}
             width={widthPx}
             height={heightPx}
+            onClick={() => setIsActive(!isActive)}
         >
 
             <div className="bg"></div>
-            <div className="circle" onClick={() => setIsActive(!isActive)}></div>
+            <div className="circle"></div>
         </StyledSwitchButton>
     )
 }
@@ -46,9 +47,6 @@ const StyledSwitchButton = styled.div`
         border: 0.1px solid lightgray;
         z-index: 3;
 
-        &:hover {
-            cursor: pointer;
-        }
     }
 
     &:not(.btn-switch-active) {
@@ -81,6 +79,7 @@ const StyledSwitchButton = styled.div`
 
     &:hover {
         background-color: #f5f5f4;
+        cursor: pointer;
     }
 
 

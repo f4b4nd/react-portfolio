@@ -29,6 +29,10 @@
     }
   }
 
+  .menu {
+    display: flex;
+  }
+
   @media screen and (max-width: 600px) {
     display: block;
 
@@ -39,13 +43,17 @@
     }
 
     .menu {
-      display: flex;
       flex-direction: column;
       margin-top: 3em;
+      align-items: center;
 
       &:not(.menu-active) {
         display: none;
       }
+    }
+
+    .btn-navigation {
+      width: 90%;
     }
     
   }

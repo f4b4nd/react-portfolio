@@ -17,7 +17,6 @@ export default function Navigation () {
                     <NavigationButton href="#skills">Skills</NavigationButton>
                     <NavigationButton href="#projects">Projects</NavigationButton>
                     <NavigationButton href="#contact">Contact me</NavigationButton>
-                    <button> Dark </button>
                     <SwitchButton widthPx='50' heightPx='25'/>
                 </div>
             </div>

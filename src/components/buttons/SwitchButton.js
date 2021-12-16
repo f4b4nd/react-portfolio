@@ -24,8 +24,8 @@ export const SwitchButton = ({children, widthPx='50', heightPx='25', ...restProp
 
 const StyledSwitchButton = styled.div`
 
-    width: ${props => props.width}px;
-    height: ${props => props.height}px;
+    width: ${({width}) => width}px;
+    height: ${({height}) => height}px;
     padding: 1em;
 
     .bg, .circle {
@@ -41,7 +41,7 @@ const StyledSwitchButton = styled.div`
 
     .circle {
         width: 50%;
-        transform: translateY(${props => (parseFloat(props.height) * (-1)) -1}px);
+        transform: translateY(${({height}) => (parseFloat(height) * (-1)) -1}px);
         background-color: white;
         box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.2);
         border: 0.1px solid lightgray;
@@ -52,12 +52,12 @@ const StyledSwitchButton = styled.div`
     &:not(.btn-switch-active) {
 
         & > .circle {
-            transform: translateX(${props => parseFloat(props.width) / 2 }px) translateY(${props => parseFloat(props.height) * (-1) -1}px);
+            transform: translateX(${({width}) => parseFloat(width) / 2 }px) translateY(${({height}) => -1 + (parseFloat(height) * -1)}px);
             transition: transform 0.4s ease-in-out;
         }
 
         & > .bg {
-            background-color: #f5f5f5;
+            background-color: #e5e7eb;
             transition: background-color 0.5s;
         }
 
@@ -66,7 +66,7 @@ const StyledSwitchButton = styled.div`
     &.btn-switch-active {
 
         & > .circle {
-            transform: translateY(${props => parseFloat(props.height) * (-1) -1}px);
+            transform: translateY(${({height}) => -1 + (parseFloat(height) * -1)}px);
             transition: transform 0.4s;
         }
 

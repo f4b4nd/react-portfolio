@@ -13,7 +13,9 @@ export default function Hero () {
                 <Social />
             </div>
             <div className="col">
-                <div className="image"></div>
+                <div className="img-container">
+                    <img src="/images/moi.png" />
+                </div>
             </div>
         </div>
     )

@@ -17,7 +17,7 @@ export default function Navigation () {
                     <NavigationButton href="#skills">Skills</NavigationButton>
                     <NavigationButton href="#projects">Projects</NavigationButton>
                     <NavigationButton href="#contact">Contact me</NavigationButton>
-                    <SwitchButton widthPx='50' heightPx='25'/>
+                    <SwitchButton />
                 </div>
             </div>
             <HamburgerButton 

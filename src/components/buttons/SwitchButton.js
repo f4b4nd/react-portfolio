@@ -1,23 +1,18 @@
-import { useState } from 'react'
-
 import styled from 'styled-components'
 
 
-
-export const SwitchButton = ({children, widthPx='50', heightPx='25', ...restProps}) => {
-
-    const [isActive, setIsActive] = useState(true)
+export const SwitchButton = ({children, widthPx='50', heightPx='25', setSwitcher, isActive, ...restProps}) => {
 
     return (
         <StyledSwitchButton 
             className={"btn-switch" + (isActive ? ' btn-switch-active': '')}
             width={widthPx}
             height={heightPx}
-            onClick={() => setIsActive(!isActive)}
+            onClick={() => setSwitcher()}
         >
 
-            <div className="bg"></div>
-            <div className="circle"></div>
+            <div className="btn-background"></div>
+            <div className="btn-circle"></div>
         </StyledSwitchButton>
     )
 }
@@ -28,18 +23,18 @@ const StyledSwitchButton = styled.div`
     height: ${({height}) => height}px;
     padding: 1em;
 
-    .bg, .circle {
+    .btn-background, .btn-circle {
         border-radius: 34px;
         height: 100%;
     }
 
-    .bg {
+    .btn-background {
         width: 100%;
         background-color: #2196f3;
         z-index: 2;
     }
 
-    .circle {
+    .btn-circle {
         width: 50%;
         background-color: white;
         box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.2);
@@ -49,12 +44,12 @@ const StyledSwitchButton = styled.div`
 
     &:not(.btn-switch-active) {
 
-        & > .circle {
+        & > .btn-circle {
             transform: translateX(${({width}) => parseFloat(width) / 2 }px) translateY(${({height}) => -parseFloat(height) - 1}px);
             transition: transform 0.4s ease-in-out;
         }
 
-        & > .bg {
+        & > .btn-background {
             background-color: #e5e7eb;
             transition: background-color 0.5s;
         }
@@ -63,12 +58,12 @@ const StyledSwitchButton = styled.div`
 
     &.btn-switch-active {
 
-        & > .circle {
+        & > .btn-circle {
             transform: translateY(${({height}) => -parseFloat(height) - 1}px);
             transition: transform 0.4s;
         }
 
-        & > .bg {
+        & > .btn-background {
             background-color: #2196f3;
             transition: background-color 0.5s;
         }

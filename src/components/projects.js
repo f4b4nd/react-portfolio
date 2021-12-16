@@ -14,7 +14,7 @@ export default function Projects () {
             title: 'Calculator', 
             description : 'Simple Calculator with React, hooks',
             image : '/images/react-calculator.png',
-            projectUrl: ''
+            projectUrl: 'https://react-calculator-f4b4nd.netlify.app/'
         },
         {
             title: 'Netflix', 
@@ -48,7 +48,7 @@ export default function Projects () {
             <Card.Image src={item.image} alt={item.title} />
             <Card.Title>{item.title}</Card.Title>
             <Card.Description>{item.description}</Card.Description>
-            <Card.Button href={item.projectUrl}>Voir le projet</Card.Button>
+            <Card.Button href={item.projectUrl} target="_blank" >Voir le projet</Card.Button>
         </Card>
     ))
 

@@ -3,6 +3,7 @@ import './App.scss';
 import { Contact, Hero, Navigation, Projects, Skills } from './components'
 
 function App() {
+
     return (
         <div className="App">
             <Navigation />
@@ -11,7 +12,7 @@ function App() {
             <Projects />
             <Contact />
         </div>
-    );
+    )
 }
 
 export default App;

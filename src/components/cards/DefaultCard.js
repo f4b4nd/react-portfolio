@@ -96,11 +96,8 @@ const StyledDefaultCard = styled.div`
         border-radius: 5px;
         padding: 0.5em;
 
-        a:visited {
+        a, a:visited {
             color: white;
-        }
-
-        a {
             text-decoration: none;
         }
 

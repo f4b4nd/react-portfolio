@@ -1,9 +1,18 @@
+import { useState, useEffect } from "react"
 import Social from "./social"
 
 export default function Hero () {
+
+    const [fadeIn, setFadeIn] = useState(false)
+    
+    useEffect(() => {
+        setTimeout(() => setFadeIn(true), 500)
+    }
+    , [])
+
     return (
-        <div className="hero">
-            <div className="col">
+        <div className="hero" id="hero">
+            <div className={"col" + (fadeIn ? ' fade-in' : '')}>
                 <h1> Hi all, I'm Fabien </h1>
                 <p>
                 I'm a web developer FullStack Javascript 🚀 <br/>

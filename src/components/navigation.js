@@ -1,6 +1,6 @@
 import { useState } from "react"
-import { ButtonHamburger } from "./buttons/ButtonHamburger"
-
+import { HamburgerButton } from "./buttons/HamburgerButton"
+import { NavigationButton } from "./buttons/NavigationButton"
 
 export default function Navigation () {
 
@@ -13,13 +13,13 @@ export default function Navigation () {
             </div>
             <div className="col">
                 <div className={'menu' + (menuIsActive ? " menu-active" : "")}>
-                    <button> Skills </button>
-                    <button> Projects </button>
-                    <button> Contact me </button>
+                    <NavigationButton href="#skills">Skills</NavigationButton>
+                    <NavigationButton href="#projects">Projects</NavigationButton>
+                    <NavigationButton href="#contact">Contact me</NavigationButton>
                     <button> Dark </button>
                 </div>
             </div>
-            <ButtonHamburger 
+            <HamburgerButton 
                 menuIsActive={menuIsActive}
                 setMenuIsActive={setMenuIsActive}
             />

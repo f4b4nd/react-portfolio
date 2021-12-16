@@ -1,18 +1,18 @@
 import styled from 'styled-components'
 
-export const ButtonHamburger = ({menuIsActive, setMenuIsActive}) => (
-    <StyledButtonHamburger 
+export const HamburgerButton = ({menuIsActive, setMenuIsActive}) => (
+    <StyledHamburgerButton
         onClick={() => setMenuIsActive(!menuIsActive)}
         className={"btn-hamburger" + (menuIsActive ? " menu-active" : "")}
     >
         <div className="bar1"></div>
         <div className="bar2"></div>
         <div className="bar3"></div>
-    </StyledButtonHamburger>       
+    </StyledHamburgerButton>       
 )
 
 
-const StyledButtonHamburger = styled.div`
+const StyledHamburgerButton = styled.div`
 
     display: block;
     cursor: pointer;

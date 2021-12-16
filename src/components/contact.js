@@ -3,7 +3,7 @@ import Social from "./social"
 
 export default function Contact () {
     return (
-        <div className="contact">
+        <div className="contact" id="contact">
             <div className="col"> 
                 <h1> Contact me </h1>
                 <h2> DISCUSS ABOUT YOUR COMPANY ? OUR PROJECT ? A JOB ? LET'S GET IN TOUCH </h2>

@@ -1,4 +1,4 @@
-import { DefaultCard } from "./cards/DefaultCard"
+import { DefaultCard as Card} from "./cards/DefaultCard"
 
 
 export default function Projects () {
@@ -44,16 +44,16 @@ export default function Projects () {
  
 
     const ProjectsCards = projects.map((item, idx) => (
-        <DefaultCard  key={idx} >
-            <DefaultCard.Image src={item.image} />
-            <DefaultCard.Title>{item.title}</DefaultCard.Title>
-            <DefaultCard.Description>{item.description}</DefaultCard.Description>
-            <DefaultCard.Button href={item.projectUrl}>Voir le projet</DefaultCard.Button>
-        </DefaultCard>
+        <Card key={idx} >
+            <Card.Image src={item.image} alt={item.title} />
+            <Card.Title>{item.title}</Card.Title>
+            <Card.Description>{item.description}</Card.Description>
+            <Card.Button href={item.projectUrl}>Voir le projet</Card.Button>
+        </Card>
     ))
 
     return (
-        <div className="projects">
+        <div className="projects" id="projects">
             <h1> Projects </h1>
             <h2> Achievements, Some Cool Stuff that I have worked on !</h2>
             <div className="projects-cards"> 

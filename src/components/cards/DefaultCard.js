@@ -46,6 +46,10 @@ const StyledDefaultCard = styled.div`
     border: 1px solid hsla(0, 0%, 82.7%, .397);
     border-radius: 10px;
 
+    & > *:not(:first-of-type):not(:last-of-type){
+        margin: 5px 0;
+    }
+    
     &:hover {
         box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.2);
     }
@@ -63,10 +67,6 @@ const StyledDefaultCard = styled.div`
             object-fit: cover;
             margin: auto;
         }
-    }
-
-    & > *:not(:first-of-type):not(:last-of-type){
-        margin: 5px 0;
     }
 
     .card-title {
@@ -94,6 +94,11 @@ const StyledDefaultCard = styled.div`
 
         a {
             text-decoration: none;
+        }
+
+        &:hover {
+            background-color: #fbbf24;
+            transition: 0.2s;
         }
     }
 

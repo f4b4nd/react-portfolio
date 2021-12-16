@@ -1,6 +1,6 @@
 export default function Skills () {
     return (
-        <div className="skills">
+        <div className="skills" id="skills">
             <div className="col">
                 <h1> What I do </h1>
                 <h2> CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK </h2>

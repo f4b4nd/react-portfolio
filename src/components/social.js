@@ -28,9 +28,9 @@ const StyledSocial = styled.div`
         margin: 10px;
 
         &:hover {            
-            background-color: 'black';
+            background-color: black;
             transition: background-color 0.5s ease;
-            //opacity: 0.7;
+            opacity: 0.7;
         }
     }
 

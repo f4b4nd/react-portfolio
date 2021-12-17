@@ -13,6 +13,8 @@ const defaultColors = {
     '800': '#2D3748',
     '900': '#1A202C',
     'background': '#FFFFFF',
+    'card-box-shadow': 'rgba(0, 0, 0, 0.2)',
+    'projects-box-shadow': '#d9dbdf',
 }
 
 const darkColors = {
@@ -29,6 +31,8 @@ const darkColors = {
     '800': defaultColors[200],
     '900': defaultColors[100],
     'background': '#171c28',
+    'card-box-shadow': '#d9dbdf',
+    'projects-box-shadow': '#171c28',
 }
 
 const themes = {
@@ -38,7 +42,6 @@ const themes = {
 
   
 export const getThemeColor = (color, globalTheme) => {
-    //const theme = isDarkTheme ? 'dark' : 'default'
     const themeColor = themes[globalTheme][color]
     const fallbackColor = themes.default[color]
     return themeColor || fallbackColor

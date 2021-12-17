@@ -30,5 +30,16 @@ export const GlobalStyle = createGlobalStyle`
         }
     }
 
+    .projects-cards {
+        box-shadow: 0 20px 30px -10px ${({theme}) => getThemeColor('projects-box-shadow', theme)};
+    }
+
+    .card {
+        background-color: white;
+
+        &:hover {
+            box-shadow: 0 20px 30px -10px ${({theme}) => getThemeColor('card-box-shadow', theme)};
+        }
+    }
 
 `

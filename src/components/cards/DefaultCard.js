@@ -52,7 +52,6 @@ const StyledDefaultCard = styled.div`
     }
     
     &:hover {
-        box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.2);
 
         img {
             transform: scale(1.1);
@@ -102,8 +101,7 @@ const StyledDefaultCard = styled.div`
         }
 
         &:hover {
-            background-color: #fbbf24;
-            transition: 0.2s;
+            cursor: pointer;
         }
     }
 

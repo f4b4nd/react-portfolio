@@ -2,17 +2,17 @@ import { useState } from "react"
 
 import { HamburgerButton } from "./buttons/HamburgerButton"
 import { NavigationButton } from "./buttons/NavigationButton"
-import { SwitchButton } from "./buttons/SwitchButton"
+import { ToggleButton } from "./buttons/ToggleButton"
 
 import { useSelector, useDispatch } from 'react-redux'
-import { switchDarkMode } from '../features/darkModeSlice'
+import { switchDarkTheme } from '../features/darkThemeSlice'
 
 
 export default function Navigation () {
 
     const [menuIsActive, setMenuIsActive] = useState(false)
     
-    const isDarkMode = useSelector((state) => state.isDarkMode.value)
+    const isDarkTheme = useSelector((state) => state.isDarkTheme.value)
     const dispatch = useDispatch()
 
 
@@ -28,9 +28,9 @@ export default function Navigation () {
                     <NavigationButton href="#skills">Skills</NavigationButton>
                     <NavigationButton href="#projects">Projects</NavigationButton>
                     <NavigationButton href="#contact">Contact me</NavigationButton>
-                    <SwitchButton 
-                        setSwitcher={() => dispatch(switchDarkMode())} 
-                        isActive={isDarkMode} 
+                    <ToggleButton 
+                        setToggle={() => dispatch(switchDarkTheme())} 
+                        isActive={isDarkTheme} 
                     />
                 </div>
             </div>

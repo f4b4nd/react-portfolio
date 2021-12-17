@@ -35,8 +35,8 @@ const themes = {
 }
 
   
-export const getThemeColor = (color, isDarkMode) => {
-    const theme = isDarkMode ? 'dark' : 'default'
+export const getThemeColor = (color, isDarkTheme) => {
+    const theme = isDarkTheme ? 'dark' : 'default'
     const themeColor = themes[theme][color]
     const fallbackColor = themes.default[color]
     return themeColor || fallbackColor

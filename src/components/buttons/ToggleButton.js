@@ -1,22 +1,21 @@
 import styled from 'styled-components'
 
 
-export const SwitchButton = ({children, widthPx='50', heightPx='25', setSwitcher, isActive, ...restProps}) => {
+export const ToggleButton = ({widthPx='50', heightPx='25', setToggle, isActive}) => (
+ 
+    <StyledToggleButton 
+        className={"btn-toggle" + (isActive ? ' btn-toggle-active': '')}
+        width={widthPx}
+        height={heightPx}
+        onClick={() => setToggle()}
+    >
+        <div className="btn-background"></div>
+        <div className="btn-circle"></div>
+    </StyledToggleButton>
+)
 
-    return (
-        <StyledSwitchButton 
-            className={"btn-switch" + (isActive ? ' btn-switch-active': '')}
-            width={widthPx}
-            height={heightPx}
-            onClick={() => setSwitcher()}
-        >
-            <div className="btn-background"></div>
-            <div className="btn-circle"></div>
-        </StyledSwitchButton>
-    )
-}
 
-const StyledSwitchButton = styled.div`
+const StyledToggleButton = styled.div`
 
     width: ${({width}) => width}px;
     height: ${({height}) => height}px;
@@ -41,7 +40,7 @@ const StyledSwitchButton = styled.div`
         z-index: 3;
     }
 
-    &:not(.btn-switch-active) {
+    &:not(.btn-toggle-active) {
 
         & > .btn-circle {
             transform: translateX(${({width}) => parseFloat(width) / 2 }px) translateY(${({height}) => -parseFloat(height) - 1}px);
@@ -55,7 +54,7 @@ const StyledSwitchButton = styled.div`
 
     }
 
-    &.btn-switch-active {
+    &.btn-toggle-active {
 
         & > .btn-circle {
             transform: translateY(${({height}) => -parseFloat(height) - 1}px);

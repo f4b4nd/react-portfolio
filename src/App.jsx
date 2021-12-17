@@ -7,11 +7,11 @@ import { GlobalStyle } from './styles/globalStyle.js'
 
 export default function App () {
 
-    const isDarkMode = useSelector((state) => state.isDarkMode.value)
+    const isDarkTheme = useSelector((state) => state.isDarkTheme.value)
 
     return (
         <>
-        <GlobalStyle isDarkMode={isDarkMode} />
+        <GlobalStyle isDarkTheme={isDarkTheme} />
         <div className="App">
             <Navigation />
             <Hero />

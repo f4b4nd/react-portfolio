@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit'
-import darkThemeReducer from './features/darkModeSlice'
+import darkThemeReducer from './features/darkThemeSlice'
 
 export default configureStore({
     reducer: {
-        isDarkMode: darkThemeReducer
+        isDarkTheme: darkThemeReducer
     }
 })

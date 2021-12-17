@@ -12,6 +12,7 @@ const defaultColors = {
     '700': '#4A5568',
     '800': '#2D3748',
     '900': '#1A202C',
+    'background': '#FFFFFF',
 }
 
 const darkColors = {
@@ -27,6 +28,7 @@ const darkColors = {
     '700': defaultColors[300],
     '800': defaultColors[200],
     '900': defaultColors[100],
+    'background': '#171c28',
 }
 
 const themes = {
@@ -35,9 +37,9 @@ const themes = {
 }
 
   
-export const getThemeColor = (color, isDarkTheme) => {
-    const theme = isDarkTheme ? 'dark' : 'default'
-    const themeColor = themes[theme][color]
+export const getThemeColor = (color, globalTheme) => {
+    //const theme = isDarkTheme ? 'dark' : 'default'
+    const themeColor = themes[globalTheme][color]
     const fallbackColor = themes.default[color]
     return themeColor || fallbackColor
 }

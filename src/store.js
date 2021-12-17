@@ -3,6 +3,6 @@ import darkThemeReducer from './features/darkThemeSlice'
 
 export default configureStore({
     reducer: {
-        isDarkTheme: darkThemeReducer
+        globalTheme: darkThemeReducer
     }
 })

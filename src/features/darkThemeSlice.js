@@ -1,16 +1,16 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 export const darkThemeSlice = createSlice({
-    name: 'isDarkTheme',
+    name: 'globalTheme',
     initialState: {
-        value: false,
+        value: 'default',
     },
     reducers: {
-        switchDarkTheme: (state) => { state.value = !state.value },
+        switchTheme: (state) => { state.value = (state.value === 'default' ? 'dark' : 'default' )},
     },
 })
 
 
-export const { switchDarkTheme } = darkThemeSlice.actions
+export const { switchTheme } = darkThemeSlice.actions
 
 export default darkThemeSlice.reducer

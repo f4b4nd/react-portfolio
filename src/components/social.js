@@ -27,16 +27,15 @@ const StyledSocial = styled.div`
         text-align: center;
         margin: 10px;
 
-        &:hover {
-            background-color: black;
+        &:hover {            
+            background-color: 'black';
             transition: background-color 0.5s ease;
-            transition: opacity 0.5s ease;
-            opacity: 0.7;
+            //opacity: 0.7;
         }
     }
 
     .fa-github {
-        background-color: black;
+        background-color: #333;
     }
 
     .fa-linkedin-in {

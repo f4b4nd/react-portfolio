@@ -69,7 +69,6 @@ const StyledToggleButton = styled.div`
     }
 
     &:hover {
-        background-color: #f5f5f4;
         cursor: pointer;
     }
 
